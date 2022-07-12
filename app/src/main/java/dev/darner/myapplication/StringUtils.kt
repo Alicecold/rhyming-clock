@@ -17,7 +17,18 @@ fun LocalTime.toHumanSpokenString(): String {
         "nine",
         "ten",
         "eleven",
-        "twelve"
+        "noon",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven"
     )
 
     val hour = if (this.minute <= 30) hours[this.hour] else hours[this.hour + 1]

@@ -40,6 +40,6 @@ fun PresentTime(time: String) {
 @Composable
 fun DefaultPreview() {
     RhymingClockTheme {
-        PresentTime("Android")
+        PresentTime("Time")
     }
 }
