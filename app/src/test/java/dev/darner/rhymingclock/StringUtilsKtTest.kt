@@ -1,4 +1,4 @@
-package dev.darner.myapplication
+package dev.darner.rhymingclock
 
 
 import org.junit.Assert.*
