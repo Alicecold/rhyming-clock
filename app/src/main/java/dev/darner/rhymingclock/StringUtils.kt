@@ -31,7 +31,7 @@ fun LocalTime.toHumanSpokenString(): String {
         "eleven"
     )
 
-    val hour = if (this.minute <= 30) hours[this.hour] else hours[this.hour + 1]
+    val hour = if (this.minute <= 30) hours[this.hour] else hours[(this.hour + 1)]
 
     val minutes = listOf(
         hour,
@@ -45,7 +45,8 @@ fun LocalTime.toHumanSpokenString(): String {
         "twenty to $hour",
         "quater to $hour",
         "ten to $hour",
-        "five to $hour"
+        "five to $hour",
+        hour
     )
     return minutes[this.minute.toDouble().roundToNearest(5)/5]
 }
